@@ -1,0 +1,34 @@
+.container {
+    
+    padding-top: 5%;
+    border: 1px;
+    border-color: black;
+    border-radius: 5px;
+}
+
+.innerdiv {
+    padding-top: 10%;
+    margin-left: 10%;
+    padding-left: 10%;
+    background-color: beige;
+    border:1px solid;
+    border-color: black;
+    border-radius: 5px;
+    padding-bottom: 10%;
+    width: 50%;
+    
+}
+
+.formelement {
+    font-size: medium;
+    font-style: italic;
+    border: 10px;
+    border-color: black;
+    border-radius: 5px;
+    padding-bottom:15%;
+
+}
+.innerdiv button{
+    background-color: blue;
+}
+

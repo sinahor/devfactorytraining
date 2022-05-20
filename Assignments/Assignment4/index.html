@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assignment4 multiplication table</title>
+    <script>
+        function multfunction() {
+            var b = 1;
+            //alert('hi');
+            var a = document.getElementById("number").value; //alert(a + ',' + b);
+            text="";
+            while (b < 10 ) {
+                var c = a * b;
+                text+= a+"*"+b+"="+c+"<br>";
+                b++;
+            }document.getElementById("table").innerHTML = text;
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" value="enter number" id="number" />
+    <button onclick="multfunction()">Click here</button><br />
+    <p id="table"> </p>
+</body>
+
+</html>

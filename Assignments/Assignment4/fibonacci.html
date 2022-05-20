@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assignment4 fibonacci</title>
+    <script>
+        function fibofunction() {
+
+            var a = document.getElementById("number").value;
+            var result = '0 ';
+            if (a > 0) {
+                var prevresult = 1;
+                var inital = 0;
+                for (let i = 0; i < a; i++) {
+                    console.log("when i=" + i + " then inital=" + inital+ " then prev=" + prevresult+ " then result=" + result); 
+                    result+=prevresult+" ";
+                    var curinitial=inital;
+                    if (prevresult > 0) {
+                        inital = prevresult;
+                    }
+                    prevresult+=curinitial;                    
+                }
+                document.getElementById("table").innerHTML = result;
+            } else {
+                document.getElementById("table").innerHTML = result;
+            }
+        }
+        function fibofunction2() {
+            var b = 0;
+            console.log("value of b=>" + b);
+            var c = 1;
+            var e = 1;
+            var d = '';
+            //alert('hi');
+            var a = document.getElementsByClassName("number").value;
+            var v = '';
+            v += b + '';
+            v += c + '';
+            //document.getElementById("table").innerHTML = v;
+            //alert(b + ',' + c);
+            while (e < a) {
+
+                console.log("value of v=>" + v + "when e=>" + e);
+                b = c;
+                c = d;
+                d = b + c;
+                v += d + '';
+                e++;
+            } document.getElementById("table").innerHTML = v;
+        }
+    </script>
+</head>
+
+<body>
+    <input type="text" placeholder="enter iterations" id="number" />
+    <button onclick="fibofunction()">Click here</button><br />
+    <p id="table"> </p>
+</body>
+
+</html>

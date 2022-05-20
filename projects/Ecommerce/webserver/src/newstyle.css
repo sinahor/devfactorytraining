@@ -1,0 +1,42 @@
+.container{
+    background-color: gray;
+    padding: 50px 0;
+}
+.outerdiv{
+    background-color: #ededed;
+    width: 50%;
+    margin: 50px 25%;
+    text-align: center;
+    padding: 2%;
+}
+.formelement{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 10px; 
+}
+.outerrow{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.outerrow .half{
+    width: 50%;
+}
+.outerrow .halfright{
+    width: 49%;
+    padding-left: 1%;
+} 
+
+.outerrow .box1{
+    width: 30%; 
+}
+.outerrow .box2{
+    width: 30%;   padding-left: 1%;
+}
+.outerrow .box3{
+    width: 30%;   padding-left: 1%;
+}
